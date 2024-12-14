@@ -1,5 +1,5 @@
 # CRC
-## __Coding and Robotics Club__<br/>
+## __Coding and Robotics Club.__<br/>
 All lesson plan outcomes for the Coding and Robotics Club will be available in this repository.<br/>
 All practicals and projects will also be available in this repository.<br/>
 <br/>

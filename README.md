@@ -5,4 +5,4 @@ All practicals and projects will also be available in this repository.<br/>
 <br/>
 ## Lesson Outcomes:<br/>
 __Bluetooth Controller__ (Python/Controller/BTController).<br/>
-_Connecting to a Bluetooth device via a Python API_
+..* _Connecting to a Bluetooth device via a Python API_

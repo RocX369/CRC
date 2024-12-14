@@ -5,6 +5,6 @@ All practicals and projects will also be available in this repository.<br/>
 <br/>
 ## Lesson Outcomes:<br/>
 __Bluetooth Controller__ (Python/Controller/BTController).<br/>
-  * ___Connecting to a Bluetooth device via a Python API___<br>
+  * __Connecting to a Bluetooth device via a Python API__<br>
   _If possible stay with core libraries, depedencies with regards to external libraries are presenting problems._<br/>
   (I am referring to __pybluez / pybluez2__)

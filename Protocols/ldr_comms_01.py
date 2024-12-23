@@ -34,10 +34,11 @@ X = [1,1,1,0,1,1,1,1]
 Y = [1,1,1,1,0,1,1,1]
 Z = [1,1,1,1,1,1,1,1]
 mors = [A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z]
-#This list will contain the word that you want to send
+#This variable will contain the sentance that you want to send
 let = hello
-txt = let.split()
-num = len(txt)
+txt = let.upper()
+text = txt.split()
+num = len(text)
 mun = len(A)
 print(num*mun)
 val = b.read_digital()

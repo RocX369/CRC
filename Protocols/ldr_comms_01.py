@@ -35,8 +35,9 @@ Y = [1,1,1,1,0,1,1,1]
 Z = [1,1,1,1,1,1,1,1]
 mors = [A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z]
 #This list will contain the word that you want to send
-let = [L,E,R,I,Z,E]
-num = len(let)
+let = hello
+txt = let.split()
+num = len(txt)
 mun = len(A)
 print(num*mun)
 val = b.read_digital()

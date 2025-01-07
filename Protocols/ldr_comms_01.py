@@ -3,6 +3,7 @@ s = 500
 r = 0
 t = 0
 x = 0
+m = 0
 code = 0
 cod = 0
 b = pin0
@@ -94,4 +95,12 @@ for x in range(num*mun):
         if len == 8:
             x = 0
             sleep(s)
-print(mor)
+        l = len(mors)
+        while m != 25:
+            if mor == mors[m]:
+                print(mors[m])
+                m = 25
+                sleep(s)
+            else:
+                m += 1
+                sleep(1)

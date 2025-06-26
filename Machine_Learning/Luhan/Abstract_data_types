@@ -1,0 +1,27 @@
+list = ["First", "Second", "Third"]
+def queue(val, apend):
+    print(list)
+    val = val.lower()
+    if val == "pop":
+        for x in range(apend):
+            list.pop(0)
+            print(list)
+    elif val == "push":
+        list.extend(apend)
+        print(list)
+    else:
+        print("No valed name")
+def stack(val, apend):
+    print(list)
+    val = val.lower()
+    if val == "pop":
+        for x in range(apend):
+            num = len(list)
+            num = num - 1
+            list.pop(num)
+            print(list)
+    elif val == "push":
+        list.extend(apend)
+        print(list)
+    else:
+        print("No valed name")

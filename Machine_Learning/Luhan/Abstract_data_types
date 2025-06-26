@@ -1,27 +1,36 @@
+#This is the list tha contains the starting values for Queue/Stack.
 list = ["First", "Second", "Third"]
+#This is where the stack function is created and all the logic is done.
 def queue(val, apend):
     print(list)
     val = val.lower()
+    #This checks if the user wants to pop/remove data from the list.
     if val == "pop":
         for x in range(apend):
             list.pop(0)
             print(list)
+    #This checks if the user wants to push new data to be added in the queue.
     elif val == "push":
         list.extend(apend)
         print(list)
+    #If the user entered a wrong name or value the function returns "No valed name"
     else:
         print("No valed name")
-def stack(val, apend):
+#This is the function that declares the "stack" data structures and does all the logic for the "stack".
+def stack(val, apend):#The "val" is the thing the user wants to do pop or push, and the "apend" is to say what value the user want to add if the user wants to add something.
     print(list)
-    val = val.lower()
+    val = val.lower()   
+    #This checks if the user wants to remove data.
     if val == "pop":
         for x in range(apend):
             num = len(list)
             num = num - 1
             list.pop(num)
             print(list)
+    #This is to check if the user wants to add data
     elif val == "push":
         list.extend(apend)
         print(list)
+    #This "else" happens when the user enter something invaled.
     else:
         print("No valed name")

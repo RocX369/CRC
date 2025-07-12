@@ -1,1 +1,4 @@
-
+q1 = []
+for x in range(10):
+  q1.append(None)
+print(q1)

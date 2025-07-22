@@ -1,0 +1,34 @@
+# Inisialise queue
+q1 = []
+sp = 0               # start pointer
+ep = 0               # end pointer
+
+# Populate queue with 10 empty items
+for i in range(10):
+    q1.append(None)
+print(q1)
+print(len(q1))
+
+# Enqueue 2,4,6,8,10,12,14,16,18,20
+def enQ(val):
+    global ep
+    if ep == len(q1):
+        print("The queue is full, cannot Enqueue. You will have to Dequeue first")
+    else:
+        q1[ep] = val
+        ep += 1
+    print(q1)
+
+
+# Program
+enQ(2)
+"""enQ(4)
+enQ(6)
+enQ(8)
+enQ(10)
+enQ(12)
+enQ(14)
+enQ(16)
+enQ(18)
+enQ(20)"""
+#enQ(22)

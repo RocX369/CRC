@@ -20,8 +20,7 @@ def q(add/remove, what/amount):
   else:
     print("No valed command")
 #VERY IMPORTANT
-#The adv_q is a WORK in "progress"
-#It is not done or ready for testing
+#The adv_q is a WORK in "progress!"
 def adv_q(add/remove, what/amount)
   q2 = []
   pointer2 = 0
@@ -29,8 +28,19 @@ def adv_q(add/remove, what/amount)
   if function == "add":
     if len(q2) == 10:
       print("Queue is full")
+      user = input("would you like to pop some items to make space?")
+      user = user.lower()
+      if user == "yes":
+        val = len(q2)
+        val2 = len(what/amount)
+        if val2 > val:
+          for x in range(val2):
+            q2.pop(0)
+      else:
+        print("okay")
+        print("list contains:",q2)
     else:
-      q2[pointer] = what/amount
+      q2.append(what/amount)
       pointer2 += 1
   elif function == "remove":
     if pointer2 == 0:

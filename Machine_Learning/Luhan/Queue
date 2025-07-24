@@ -1,12 +1,10 @@
 # Global queue and pointer for q()
 q1 = []
-pointer = 0
-q2 = []
-pointer2 = 0
+pointer1 = 0
 
-
+#This is my basic queue
 def q(command, value=None):
-    global q1, pointer
+    global q1, pointer1
     # Ensure the queue always has 10 slots
     for x in range(len(q1), 10):
         q1.append(None)
@@ -17,58 +15,25 @@ def q(command, value=None):
     if function == "add":
         if pointer == 10:
             print("List full")
+            val = input("Do you want to pop?")
+            val = val.lower()
+            if val == "yes":
+                q1.pop(0)
+            elif val == "no":
+                print("Okay pop someitems when your ready!")
+            else:
+                print("No valed input")
         else:
             q1[pointer] = value
             pointer += 1
-            print("Added:", value)
-    elif function == "remove":
+    elif function == "pop":
         if pointer == 0:
             print("Queue is empty")
         else:
             removed = q1.pop(0)
             q1.append(None)
             pointer -= 1
-            print("Removed:", removed)
     else:
         print("No valid command")
 
     print("Queue now:", q1)
-
-
-# The adv_q is a WORK in "progress!"
-def adv_q(command, value=None):
-    global q2, pointer2
-    function2 = command.lower()
-
-    if function2 == "add":
-        if len(q2) >= 10:
-            print("Queue is full")
-            user = input("Would you like to pop some items to make space? (yes/no): ").lower()
-            if user == "yes":
-                try:
-                    val2 = len(value)
-                except TypeError:
-                    val2 = 1  # If value isn't iterable
-                for x in range(min(val2, len(q2))):
-                    q2.pop(0)
-                    pointer2 = max(0, pointer2 - 1)
-            else:
-                print("Okay")
-                print("List contains:", q2)
-                return
-        q2.append(value)
-        pointer2 += 1
-        print("Added:", value)
-
-    elif function2 == "remove":
-        if len(q2) == 0:
-            print("Queue is empty")
-        else:
-            removed = q2.pop(0)
-            pointer2 -= 1
-            print("Removed:", removed)
-    else:
-        print("No valid command")
-
-    print("Queue now:", q2)
-

@@ -1,10 +1,10 @@
 # Global queue and pointer for q()
 q1 = []
-pointer1 = 0
+pointer = 0
 
 #This is my basic queue
 def q(command, value=None):
-    global q1, pointer1
+    global q1, pointer
     # Ensure the queue always has 10 slots
     for x in range(len(q1), 10):
         q1.append(None)
@@ -37,3 +37,5 @@ def q(command, value=None):
         print("No valid command")
 
     print("Queue now:", q1)
+
+q("add",1)

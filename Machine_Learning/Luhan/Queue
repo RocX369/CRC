@@ -19,10 +19,15 @@ def q(command, value=None):
             val = input("Do you want to pop?")
             val = val.lower()
             if val == "yes":
-                q1.pop(0)
-                q1.append(value)
+                val = input("How many do you want to pop?")
+                val = int(val)
+                for x in range(val):
+                    q1.pop(0)
+                    pointer -= 1
+                if len(q1) < 10:
+                    q1.append(value)
             elif val == "no":
-                print("Okay pop some items when your ready!")
+                print("When you want to make space just remove some items from the list using remove!")
             else:
                 print("No valed input")
         else:

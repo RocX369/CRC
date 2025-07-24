@@ -1,6 +1,7 @@
 # Global queue and pointer for q()
 q1 = []
 pointer = 0
+val2 = 0
 
 #This is my basic queue
 def q(command, value=None):
@@ -19,8 +20,9 @@ def q(command, value=None):
             val = val.lower()
             if val == "yes":
                 q1.pop(0)
+                q1.append(value)
             elif val == "no":
-                print("Okay pop someitems when your ready!")
+                print("Okay pop some items when your ready!")
             else:
                 print("No valed input")
         else:
@@ -37,5 +39,3 @@ def q(command, value=None):
         print("No valid command")
 
     print("Queue now:", q1)
-
-q("add",1)

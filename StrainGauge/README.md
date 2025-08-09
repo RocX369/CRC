@@ -1,0 +1,1 @@
+[HX711](https://tinyurl.com/27yulr98) - Amplifier and ADC (24bit)

@@ -1,0 +1,10 @@
+x1 - 20mm pipe 1-2m
+x6 - T-joint pipes
+x6 - elbow bent pipe
+x1 - Electric water regulator
+x1 - Water pump
+x1 - Earth worm farm
+x1 - Reservior 
+x3 - 500m bottle
+x3 - Bottle-pipe adaptor
+x? - Sensors
